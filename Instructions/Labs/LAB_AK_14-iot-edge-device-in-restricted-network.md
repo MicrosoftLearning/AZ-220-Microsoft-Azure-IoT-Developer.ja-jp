@@ -2,12 +2,12 @@
 lab:
   title: ラボ 14:制限付きネットワークとオフラインで IoT Edge デバイスを実行する
   module: 'Module 7: Azure IoT Edge Module'
-ms.openlocfilehash: 1413872367a9e3f0364b162a1d671fe8d122c469
-ms.sourcegitcommit: 06dc1e6caa88a09b1246dd1161f15f619db9c6f8
+ms.openlocfilehash: 70cd39189546491a832411611137448aa5ab7aa3
+ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421535"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "140872826"
 ---
 # <a name="run-an-iot-edge-device-in-restricted-network-and-offline"></a>制限付きネットワークとオフラインで IoT Edge デバイスを実行する
 
@@ -53,7 +53,7 @@ Contoso がチーズ用パッケージングおよび出荷設備で導入した
 
 1. 仮想マシン環境で Microsoft Edge ブラウザー ウィンドウを開き、次の Web アドレスに移動します。
  
-    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fbicep%2FAllfiles%2FARM%2Flab14.json+++
+    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab14.json+++
 
     > **注**:緑色の "T" 記号 (例: +++このテキストを入力+++) が表示されているときはいつでも、関連付けられているテキストをクリックすると、仮想マシン環境内の現在のフィールドに情報が入力されます。
 

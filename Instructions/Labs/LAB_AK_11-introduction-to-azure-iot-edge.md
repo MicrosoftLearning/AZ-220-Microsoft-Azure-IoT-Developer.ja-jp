@@ -2,12 +2,12 @@
 lab:
   title: ラボ 11:Azure IoT Edge の概要
   module: 'Module 6: Azure IoT Edge Deployment Process'
-ms.openlocfilehash: acb29f4d9dc7a6989c9927dc6a357b869b1a1567
-ms.sourcegitcommit: 068937341b9739ae7f357ad376bd9a92a0ab5870
+ms.openlocfilehash: e68d422adaff8789d45491214f902c6cf62ebe47
+ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "139256862"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "140872839"
 ---
 # <a name="introduction-to-azure-iot-edge"></a>Azure IoT Edge の概要
 
@@ -181,7 +181,7 @@ Azure IoT Edge ソリューションのプロトタイプ作成を任されま�
 
 1. 仮想マシン環境で Microsoft Edge ブラウザー ウィンドウを開き、次の Web アドレスに移動します。
 
-    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fbicep%2FAllfiles%2FARM%2Flab11a.json+++
+    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab11a.json+++
 
 1. プロンプトが表示されたら、**Azure portal** にログインします。
 

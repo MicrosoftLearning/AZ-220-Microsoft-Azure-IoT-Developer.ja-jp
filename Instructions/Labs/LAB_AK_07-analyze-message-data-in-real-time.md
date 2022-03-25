@@ -2,12 +2,12 @@
 lab:
   title: ラボ 07:デバイス メッセージ ルーティング
   module: 'Module 4: Message Processing and Analytics'
-ms.openlocfilehash: 4cdc79c81f29a2f2b5b7821894675a3bd2dc9737
-ms.sourcegitcommit: 06dc1e6caa88a09b1246dd1161f15f619db9c6f8
+ms.openlocfilehash: 2601ddbe100553d88feba68b8210fb2c3b70930d
+ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421487"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "140872830"
 ---
 # <a name="device-message-routing"></a>デバイス メッセージ ルーティング
 
@@ -63,7 +63,7 @@ Contoso の経営陣は、DPS を使用した自動デバイス登録の実装�
 
 1. 仮想マシン環境で Microsoft Edge ブラウザー ウィンドウを開き、次の Web アドレスに移動します。
  
-    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fbicep%2FAllfiles%2FARM%2Flab07.json+++
+    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab07.json+++
 
     > **注**:緑色の "T" 記号 (例: +++このテキストを入力+++) が表示されているときはいつでも、関連付けられているテキストをクリックすると、仮想マシン環境内の現在のフィールドに情報が入力されます。
 
@@ -85,7 +85,7 @@ Contoso の経営陣は、DPS を使用した自動デバイス登録の実装�
 
     > **注**:**rg-az220** グループが既に存在する場合、 **[リージョン]** フィールドは、リソース グループで使用されるリージョンに設定され、読み取り専用になります。
 
-1. **[ID]** フィールドに、演習 1 で作成した一意の ID を入力します。
+1. **[Your ID]\(ユーザー ID\)** フィールドに、演習 1 で作成した一意の ID を入力します。
 
 1. **[コース ID]** フィールドに、「**az220**」と入力します。
 

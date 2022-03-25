@@ -2,12 +2,12 @@
 lab:
   title: ラボ 15:Azure IoT Hub を使用してデバイスをリモートで監視および制御する
   module: 'Module 8: Device Management'
-ms.openlocfilehash: 086ab275071ffdf4b2e1c6259ca15c914d48ddf1
-ms.sourcegitcommit: 06dc1e6caa88a09b1246dd1161f15f619db9c6f8
+ms.openlocfilehash: f0ebccb4b7c7b415397ba0b36ddbb7c96e59717c
+ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421508"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "140872800"
 ---
 # <a name="remotely-monitor-and-control-devices-with-azure-iot-hub"></a>Azure IoT Hub を使用してデバイスをリモートで監視および制御する
 
@@ -74,7 +74,7 @@ Contoso から貯蔵庫の環境を制御制限の範囲内に保つ自動化シ
 
 1. 仮想マシン環境で Microsoft Edge ブラウザー ウィンドウを開き、次の Web アドレスに移動します。
  
-    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fbicep%2FAllfiles%2FARM%2Flab15.json+++
+    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab15.json+++
 
     > **注**:緑色の "T" 記号 (例: +++このテキストを入力+++) が表示されているときはいつでも、関連付けられているテキストをクリックすると、仮想マシン環境内の現在のフィールドに情報が入力されます。
 

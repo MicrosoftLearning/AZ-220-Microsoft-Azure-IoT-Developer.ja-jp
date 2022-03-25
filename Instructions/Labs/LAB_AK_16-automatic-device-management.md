@@ -2,12 +2,12 @@
 lab:
   title: ラボ 16:Azure IoT Hub を使用した IoT デバイス管理の自動化
   module: 'Module 8: Device Management'
-ms.openlocfilehash: c6c385f4f1d9dcd09b9cff85b7de31b9146f544d
-ms.sourcegitcommit: 06dc1e6caa88a09b1246dd1161f15f619db9c6f8
+ms.openlocfilehash: 3b752cc477c664f1c44b754c49b2e20542de1f72
+ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421532"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "140872824"
 ---
 # <a name="automate-iot-device-management-with-azure-iot-hub"></a>Azure IoT Hub を使用した IoT デバイス管理の自動化
 
@@ -74,7 +74,7 @@ IT 部署は、オペレータ向けに開発したバックエンド ポータ�
 
 1. 仮想マシン環境で Microsoft Edge ブラウザー ウィンドウを開き、次の Web アドレスに移動します。
  
-    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fbicep%2FAllfiles%2FARM%2Flab16.json+++
+    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab16.json+++
 
     > **注**:緑色の "T" 記号 (例: +++このテキストを入力+++) が表示されているときはいつでも、関連付けられているテキストをクリックすると、仮想マシン環境内の現在のフィールドに情報が入力されます。
 
@@ -96,7 +96,7 @@ IT 部署は、オペレータ向けに開発したバックエンド ポータ�
 
     > **注**:**rg-az220** グループが既に存在する場合、 **[リージョン]** フィールドは、リソース グループで使用されるリージョンに設定され、読み取り専用になります。
 
-1. **[ID]** フィールドに、演習 1 で作成した一意の ID を入力します。
+1. **[Your ID]\(ユーザー ID\)** フィールドに、演習 1 で作成した一意の ID を入力します。
 
 1. **[コース ID]** フィールドに、「**az220**」と入力します。
 

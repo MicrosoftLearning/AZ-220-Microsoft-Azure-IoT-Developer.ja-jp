@@ -2,12 +2,12 @@
 lab:
   title: ラボ 04:IoT デバイスを Azure に接続する
   module: 'Module 2: Devices and Device Communication'
-ms.openlocfilehash: 1859cc4bc1343476a54b09d8b7cdb69359eb849b
-ms.sourcegitcommit: 06dc1e6caa88a09b1246dd1161f15f619db9c6f8
+ms.openlocfilehash: bae15d047d1666351e9ecb817c45621974c0fe7d
+ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421547"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "140872791"
 ---
 # <a name="connect-an-iot-device-to-azure"></a>IoT デバイスを Azure に接続する
 
@@ -51,7 +51,7 @@ Contoso は温度と湿度を監視するために、IoT デバイスを使用�
 1. 仮想マシン環境で Microsoft Edge ブラウザー ウィンドウを開き、次の Web アドレスに移動します。
 
     ```text
-    https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fbicep%2FAllfiles%2FARM%2Flab04.json
+    https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab04.json
     ```
 
     > **注**:緑色の "T" 記号 (例: +++このテキストを入力+++) が表示されているときはいつでも、関連付けられているテキストをクリックすると、仮想マシン環境内の現在のフィールドに情報が入力されます。
@@ -464,9 +464,9 @@ Azure IoT Device SDK を使用すると、デバイス クライアントを使�
 
     最後に、アプリケーションはユーザー入力を待ちます。
 
-    > **Information**:**DeviceClient** クラスは[ここ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.devices.client.deviceclient?view=azure-dotnet)に記載されています。
+    > **Information**:**DeviceClient** クラスは [ここ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.devices.client.deviceclient?view=azure-dotnet)に記載されています。
     >
-    > **Information**:**CreateFromConnectionString** メソッドは[ここ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.devices.client.deviceclient.createfromconnectionstring?view=azure-dotnet#Microsoft_Azure_Devices_Client_DeviceClient_CreateFromConnectionString_System_String_Microsoft_Azure_Devices_Client_TransportType_)に記載されています。
+    > **Information**:**CreateFromConnectionString** メソッドは [ここ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.devices.client.deviceclient.createfromconnectionstring?view=azure-dotnet#Microsoft_Azure_Devices_Client_DeviceClient_CreateFromConnectionString_System_String_Microsoft_Azure_Devices_Client_TransportType_)に記載されています。
     >
     > **Information**:サポートされているトランスポート プロトコルは、[ここ](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-protocols)に記載されています。
 
@@ -534,7 +534,7 @@ Azure IoT Device SDK を使用すると、デバイス クライアントを使�
 
     > **Information**:C# での `async`、`await`、非同期プログラミングの詳細については、[こちら](https://docs.microsoft.com/en-us/dotnet/csharp/async)を参照してください。
 
-    > **Information**:**Message** クラスは[ここ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.devices.client.message?view=azure-dotnet)に記載されています。
+    > **Information**:**Message** クラスは [ここ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.devices.client.message?view=azure-dotnet)に記載されています。
 
 1. `// INSERT CreateMessageString method below here` というコメントを探します。
 
@@ -596,7 +596,7 @@ Azure IoT Device SDK を使用すると、デバイス クライアントを使�
 
     これは、乱数を使用して温度と湿度を表す値を返す非常に単純なクラスです。 実際には、センサーとの対話は、特に低レベルでセンサーと通信して測定値を導出する必要がある場合 (適切な単位で直接読み取るのではなく)、はるかに複雑になることがよくあります。
 
-    > **Information**:単純な温度、湿度、圧力センサーと相互作用するコードのより代表的な例を[ここ](https://bit.ly/IoT-BME280)で見ることができます。
+    > **Information**:単純な温度、湿度、圧力センサーと相互作用するコードのより代表的な例を [ここ](https://bit.ly/IoT-BME280)で見ることができます。
 
 1. **[ファイル]** メニューの **[保存]** をクリックします。
 

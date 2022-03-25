@@ -2,12 +2,12 @@
 lab:
   title: ラボ 06:DPS を使用して IoT デバイスを安全かつ大規模に自動プロビジョニングする
   module: 'Module 3: Device Provisioning at Scale'
-ms.openlocfilehash: d8d78212ab65723377fa9262f6c6505d797f2725
-ms.sourcegitcommit: 06dc1e6caa88a09b1246dd1161f15f619db9c6f8
+ms.openlocfilehash: e8e5d66ff173285ebc3c7c40a7815059d899a543
+ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421538"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "140872818"
 ---
 # <a name="automatically-provision-iot-devices-securely-and-at-scale-with-dps"></a>DPS を使用して IoT デバイスを安全かつ大規模に自動プロビジョニングする
 
@@ -47,7 +47,7 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
 1. 仮想マシン環境で Microsoft Edge ブラウザー ウィンドウを開き、次の Web アドレスに移動します。
  
-    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fbicep%2FAllfiles%2FARM%2Flab06.json+++
+    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab06.json+++
 
     > **注**:緑色の "T" 記号 (例: +++このテキストを入力+++) が表示されているときはいつでも、関連付けられているテキストをクリックすると、仮想マシン環境内の現在のフィールドに情報が入力されます。
 
