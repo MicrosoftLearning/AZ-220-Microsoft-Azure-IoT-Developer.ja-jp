@@ -2,12 +2,12 @@
 lab:
   title: ラボ 12:IoT Edge ゲートウェイを設定する
   module: 'Module 6: Azure IoT Edge Deployment Process'
-ms.openlocfilehash: 70d364787ed2a60596d7e194e9c172b28585d13b
-ms.sourcegitcommit: 06dc1e6caa88a09b1246dd1161f15f619db9c6f8
+ms.openlocfilehash: ae46d3ae63028630dd3ab56704f07448d96116c1
+ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421529"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "140872821"
 ---
 # <a name="setup-an-iot-edge-gateway"></a>IoT Edge ゲートウェイを設定する
 
@@ -57,7 +57,7 @@ ms.locfileid: "138421529"
 
 1. 仮想マシン環境で Microsoft Edge ブラウザー ウィンドウを開き、次の Web アドレスに移動します。
  
-    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fbicep%2FAllfiles%2FARM%2Flab12.json+++
+    +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab12.json+++
 
     > **注**:緑色の "T" 記号 (例: +++このテキストを入力+++) が表示されているときはいつでも、関連付けられているテキストをクリックすると、仮想マシン環境内の現在のフィールドに情報が入力されます。
 
@@ -79,7 +79,7 @@ ms.locfileid: "138421529"
 
     > **注**:**rg-az220** グループが既に存在する場合、 **[リージョン]** フィールドは、リソース グループで使用されるリージョンに設定され、読み取り専用になります。
 
-1. **[ID]** フィールドに、演習 1 で作成した一意の ID を入力します。
+1. **[Your ID]\(ユーザー ID\)** フィールドに、演習 1 で作成した一意の ID を入力します。
 
 1. **[コース ID]** フィールドに、「**az220**」と入力します。
 
@@ -172,11 +172,13 @@ ms.locfileid: "138421529"
 > * [IoT Edge デバイスで証明書を管理する](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-manage-device-certificates?view=iotedge-2020-11)
 > * [IoT Edge デバイスの機能をテストするためのデモ用の証明書を作成する](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-create-test-certificates?view=iotedge-2020-11)
 
-1. **[Azure に配置する]** を選択します。
+1. Web ブラウザーを開き、次のアドレスに移動します。 
 
-    [![Azure へのデプロイ](media/deploytoazure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fbicep%2FAllfiles%2FARM%2Flab12a.json)
+    ```
+    https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab12a.json
+    ```
 
-1. プロンプトが表示されたら、**Azure Portal** にログインします。
+1. メッセージが表示されたら、このラボで使っている Azure 資格情報を使ってログインします。
 
     **[カスタム デプロイ]** ページが表示されます。
 
@@ -301,7 +303,7 @@ Azure IoT Edge でサポートされている IoT 通信プロトコルのポー
 
     * Azure portal メニューで、 **[リソース グループ]** をクリックします。
     * **[リソース グループ]** ブレードの **[名前]** で、**rg-az220vm** リソース グループを見つけます。
-    * **rg-az220vm** の行で、ブレードの右側にある **[...** ] をクリックした後、 **[ダッシュボードにピン留め]** をクリックします。
+    * **rg-az220vm** の行で、ブレードの右側にある **[...]** をクリックした後、 **[ダッシュボードにピン留め]** をクリックします。
 
     ダッシュボードを編集して、RG タイルとリストに表示されたリソースへのアクセスを容易にすることもできます。
 

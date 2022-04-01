@@ -2,12 +2,12 @@
 lab:
   title: ラボ 14:制限付きネットワークとオフラインで IoT Edge デバイスを実行する
   module: 'Module 7: Azure IoT Edge Module'
-ms.openlocfilehash: 70cd39189546491a832411611137448aa5ab7aa3
-ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
+ms.openlocfilehash: bbcada29239744e2713770d4b512a1804ed195a2
+ms.sourcegitcommit: 913a1097850a27ac5a950d3b589fe67e3f250846
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140872826"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "141143499"
 ---
 # <a name="run-an-iot-edge-device-in-restricted-network-and-offline"></a>制限付きネットワークとオフラインで IoT Edge デバイスを実行する
 
@@ -322,8 +322,8 @@ VM の初回起動時に、IoT Edge を構成するスクリプトが実行さ�
 
 1. このラボの後半で使うルート証明書をダウンロードするには、次のコマンドを入力します。
 
-    ```bashd
-    download ~/lab12/
+    ```bash
+    download ~/lab12/azure-iot-test-only.root.ca.cert.pem
     ```
 
 ### <a name="exercise-3-configure-iot-edge-device-time-to-live-and-message-storage"></a>演習 3:IoT Edge デバイスの Time to Live とメッセージの記憶域を構成する
