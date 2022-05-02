@@ -2,12 +2,12 @@
 lab:
   title: ラボ 12:IoT Edge ゲートウェイを設定する
   module: 'Module 6: Azure IoT Edge Deployment Process'
-ms.openlocfilehash: ae46d3ae63028630dd3ab56704f07448d96116c1
-ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
+ms.openlocfilehash: a710ea3e39a2c63da58925f669b7bdb8f983a4e7
+ms.sourcegitcommit: b9f2c53cb54dde700e21476bcc7435310d15445d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140872821"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "141604967"
 ---
 # <a name="setup-an-iot-edge-gateway"></a>IoT Edge ゲートウェイを設定する
 
@@ -626,9 +626,7 @@ VM の初回起動時に、IoT Edge を構成するスクリプトが実行さ�
 
 1. **connectionString** 変数の宣言を見つけて、プレースホルダー値を **sensor-th-0072** IoT デバイスのプライマリ接続文字列に置き換えます。
 
-1. 割り当てられた **connectionString** 値を **GatewayHostName** プロパティに追加し、GatewayHostName の値をIoT Edge ゲートウェイ デバイスの完全な DNS 名に設定します。
-
-    Edge ゲートウェイ デバイスの完全な DNS 名は、デバイス ID **vm-az220-training-gw0001-<自分の ID>** に、指定したリージョンと Azure 商用クラウド ドメイン名が追加されたものです (例: **.westus2.cloudapp.azure.com**)。
+1. 割り当てられた **connectionString** 値を **GatewayHostName** プロパティに追加し、GatewayHostName の値を IoT Edge ゲートウェイ デバイスの名前に設定します。 この名前は、このラボで前に hosts ファイルで指定した名前と一致する必要があります。
 
     完成した接続文字列値は、次の形式に一致する必要があります。
 

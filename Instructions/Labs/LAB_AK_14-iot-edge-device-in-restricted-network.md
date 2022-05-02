@@ -2,12 +2,12 @@
 lab:
   title: ラボ 14:制限付きネットワークとオフラインで IoT Edge デバイスを実行する
   module: 'Module 7: Azure IoT Edge Module'
-ms.openlocfilehash: bbcada29239744e2713770d4b512a1804ed195a2
-ms.sourcegitcommit: 913a1097850a27ac5a950d3b589fe67e3f250846
+ms.openlocfilehash: ed1a6e21e83fc4b9f0fa22edf68da4ac946adf65
+ms.sourcegitcommit: b9f2c53cb54dde700e21476bcc7435310d15445d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "141143499"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "141604970"
 ---
 # <a name="run-an-iot-edge-device-in-restricted-network-and-offline"></a>制限付きネットワークとオフラインで IoT Edge デバイスを実行する
 
@@ -623,14 +623,12 @@ IoT Edge デバイスは、切断/オフライン状態の場合に自動的に�
 
 1. プレースホルダーの値を **sensor-th-0084** IoT デバイスのプライマリ接続文字列に置き換えます。
 
-1. 割り当てられた **connectionString** 値を **GatewayHostName** プロパティに追加し、GatewayHostName の値をIoT Edge ゲートウェイ デバイスの完全な DNS 名に設定します。
-
-    Edge ゲートウェイ デバイスの完全な DNS 名は、デバイス ID **vm-az220-training-gw0002-{your-id}** であり、指定したリージョンと Azure 商用クラウドドメイン名が追加されます (例: **westus2.cloudapp.azure.com**)。
+1. 割り当てられた **connectionString** 値を **GatewayHostName** プロパティに追加し、GatewayHostName の値を IoT Edge ゲートウェイ デバイスの名前に設定します。 これは、このラボで前に hosts ファイルで指定した名前と一致する必要があります。
 
     完成した接続文字列値は、次の形式に一致する必要があります。
 
     ```text
-    HostName=<IoT-Hub-Name>.azure-devices.net;DeviceId=sensor-th-0072;SharedAccessKey=<Primary-Key-for-IoT-Device>;GatewayHostName=<DNS-Name-for-IoT-Edge-Device>
+    HostName=<IoT-Hub-Name>.azure-devices.net;DeviceId=sensor-th-0072;SharedAccessKey=<Primary-Key-for-IoT-Device>;GatewayHostName=<Name-for-IoT-Edge-Device>
     ```
 
     上記のプレースホルダーを適切な値に置き換えてください。
