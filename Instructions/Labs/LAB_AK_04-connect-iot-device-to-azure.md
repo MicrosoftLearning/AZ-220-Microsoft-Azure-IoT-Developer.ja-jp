@@ -2,12 +2,12 @@
 lab:
   title: ラボ 04:IoT デバイスを Azure に接続する
   module: 'Module 2: Devices and Device Communication'
-ms.openlocfilehash: bae15d047d1666351e9ecb817c45621974c0fe7d
-ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
+ms.openlocfilehash: 024b4b28e920cb7193c1272bec4fde3d697d93ec
+ms.sourcegitcommit: b1a2557baf4854683036fde125ada75c6f3dbbfd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140872791"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "141200492"
 ---
 # <a name="connect-an-iot-device-to-azure"></a>IoT デバイスを Azure に接続する
 
@@ -209,7 +209,9 @@ Azure IoT Device SDK を使用すると、デバイス クライアントを使�
     dotnet add package Microsoft.Azure.Devices.Client
     ```
 
-    > **注**:**Microsoft.Azure.Devices.Client** パッケージには、Azure IoT Device SDK for .NET が含まれており、依存関係として **Newtonsoft.Json** パッケージが含まれています。 **Newtonsoft.Json** パッケージには、JSON の作成と操作を支援する API が含まれています。
+    > **注**:**Microsoft.Azure.Devices.Client** パッケージには、Azure IoT Device SDK for .NET が含まれており、依存関係として **Newtonsoft.Json** パッケージが含まれています。 **Newtonsoft.Json** パッケージには、JSON の作成と操作を支援する API が含まれています。 必要に応じて、`dotnet add package Newtonsoft.Json` を使用して Newtonsoft.Json パッケージをインストールします。
+
+    > **重要**:"パッケージに使用できるバージョンはありません" エラーが発生した場合は、ご利用の開発環境の Nuget 構成ファイルを更新する必要があります。 次のコマンドを実行します (次に、dotnet add package コマンドを再試行します)。 `dotnet nuget add source --name nuget.org https://api.nuget.org/v3/index.json`
 
     次のタスクでは、シミュレートされたデバイス アプリをビルドしてテストします。
 
@@ -289,7 +291,7 @@ Azure IoT Device SDK を使用すると、デバイス クライアントを使�
     ```csharp
     using System;
 
-    namespace CaveSensor
+    namespace CaveDevice
     {
         class Program
         {
@@ -309,7 +311,7 @@ Azure IoT Device SDK を使用すると、デバイス クライアントを使�
         System.Console.WriteLine("Hello World!");
         ```
 
-    * `namespace` 領域 - これは、名前空間に続く `{ }` に含まれるクラスがその名前空間の一部であることを指定します。 したがって、**Console** が **System** 名前空間の一部であるのと同様に、上記の例では、**Program** クラスは **CaveSensor** 名前空間の一部であり、そのフル ネームは **CaveSensor.Program** です。
+    * `namespace` 領域 - これは、名前空間に続く `{ }` に含まれるクラスがその名前空間の一部であることを指定します。 したがって、**Console** が **System** 名前空間の一部であるのと同様に、上記の例では、**Program** クラスは **CaveDevice** 名前空間の一部であり、そのフル ネームは **CaveDevice.Program** です。
 
     * `class` 領域 - これは **Program** クラスの内容を定義します。 1 つのソース ファイル内に複数のクラスを含めることができます
 
@@ -358,23 +360,16 @@ Azure IoT Device SDK を使用すると、デバイス クライアントを使�
 
     ```csharp
     // INSERT using statements below here
-
     namespace CaveDevice
     {
         class Program
         {
             // INSERT variables below here
-
             // INSERT Main method below here
-
             // INSERT SendDeviceToCloudMessagesAsync method below here
-
             // INSERT CreateMessageString method below here
-
         }
-
         // INSERT EnvironmentSensor class below here
-
     }
     ```
 
@@ -417,7 +412,7 @@ Azure IoT Device SDK を使用すると、デバイス クライアントを使�
 
     **deviceClient** 変数は、**DeviceClient** のインスタンスを格納するために使用されます。このクラスは Azure IoT Device SDK から取得され、デバイスが IoT Hub との間でメッセージを送受信するために使用できるメソッドが含まれています。
 
-    **connectionString** 変数には、前に作成したデバイスの接続文字列が含まれます。 この値は、**DeviceClient** が IoT Hub に接続するために使用します。
+    **connectionString** 変数には、前に作成したデバイスの接続文字列が含まれます。 この値は、**DeviceClient** が IoT Hub に接続するために使用します。 次の手順で connectionStrin の値を指定します。
 
     > **重要**: このコース全体を通して、このラボと他のラボで、接続文字列、パスワード、およびその他の構成情報がアプリケーションにハードコードされている例を確認できます。 これはラボを簡素化するためだけに行われるものであり、推奨される方法では **ありません**。 ラボで提供されるときは、このようなセキュリティの問題が可能な限り対処されています。 セキュリティに関するトピック (および、その他の重要な考慮事項) は、インストラクターによるプレゼンテーションの間、および受講者ハンドブックの内容において、コース全体の流れをサポートする方法で対処されます。 2 つが常に完全に一致するとは限りません。 その結果、ラボのトピックの中には、コースの後半になるまで詳しく説明されないものがある可能性があります。
 

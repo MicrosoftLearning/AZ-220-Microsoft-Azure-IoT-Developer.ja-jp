@@ -2,12 +2,12 @@
 lab:
   title: ラボ 11:Azure IoT Edge の概要
   module: 'Module 6: Azure IoT Edge Deployment Process'
-ms.openlocfilehash: e68d422adaff8789d45491214f902c6cf62ebe47
-ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
+ms.openlocfilehash: a223c0aa8abc8c5a16e81d343a0f94a6b9bbdf36
+ms.sourcegitcommit: 88ea18cdadb26810b563a54c06ce5e98344bcd92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140872839"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "141258553"
 ---
 # <a name="introduction-to-azure-iot-edge"></a>Azure IoT Edge の概要
 
@@ -317,7 +317,7 @@ Azure IoT Edge ソリューションのプロトタイプ作成を任されま�
 
     カスタム モジュールの名前を「tempsensor」と命名します
 
-1. **[イメージ URL]** の下に「**asaedgedockerhubtest/asa-edge-test-module:simulated-temperature-sensor**」と入力します。
+1. **[イメージの URI]** で「**mcr.microsoft.com/azureiotedge-simulated-temperature-sensor**」と入力します
 
     > **注**:このイメージは、このテスト シナリオをサポートするために製品グループによって提供される Docker Hub で公開されたイメージです。
 

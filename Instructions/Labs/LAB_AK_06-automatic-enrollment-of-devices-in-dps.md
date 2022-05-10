@@ -2,12 +2,12 @@
 lab:
   title: ラボ 06:DPS を使用して IoT デバイスを安全かつ大規模に自動プロビジョニングする
   module: 'Module 3: Device Provisioning at Scale'
-ms.openlocfilehash: e8e5d66ff173285ebc3c7c40a7815059d899a543
-ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
+ms.openlocfilehash: 5e9c0a761111d5763f2e313cc249052b9ea61e30
+ms.sourcegitcommit: b1a2557baf4854683036fde125ada75c6f3dbbfd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140872818"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "141200495"
 ---
 # <a name="automatically-provision-iot-devices-securely-and-at-scale-with-dps"></a>DPS を使用して IoT デバイスを安全かつ大規模に自動プロビジョニングする
 
@@ -391,14 +391,14 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
     両方の証明書ファイルをコピーすることで時間を節約できますが、最初にビルドするコード プロジェクトでは、最初の証明書である `sensor-thl-2000-device.cert.pfx` のみを使用します。
 
-1. ファイル エクスプローラーで、ラボ 6 (DPS のデバイスの自動登録) のスターター フォルダーに移動します。
+1. エクスプローラーで、ラボ 6 (DPS でのデバイスの自動登録) の Final フォルダーに移動します。
 
     "_ラボ 3:開発環境の設定_" では、ZIP ファイルをダウンロードしてコンテンツをローカルに抽出することで、ラボ リソースを含む GitHub リポジトリをクローンしました。 抽出されたフォルダー構造には、次のフォルダー パスが含まれます。
 
     * すべてのファイル
       * ラボ
           * 06 - DPS でのデバイスの自動登録
-            * スターター
+            * 最終工程
               * ContainerDevice
 
 1. ContainerDevice フォルダーを開いた状態で、コピーしたデバイス証明書ファイルを貼り付けます。
@@ -409,7 +409,7 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
 1. **[ファイル]** メニューで、 **[フォルダーを開く]** を選択します。
 
-1. **[フォルダーを開く]** ダイアログで、ラボ 6 (DPS のデバイスの自動登録) のスターター フォルダーに移動します。
+1. **[フォルダーを開く]** ダイアログで、ラボ 6 (DPS でのデバイスの自動登録) の Final フォルダーに移動します。
 
 1. **[ContainerDevice]** をクリックし、 **[フォルダーの選択]** をクリックします。
 
@@ -497,14 +497,14 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
 1. Windows ファイル エクスプローラーを開きます。
 
-1. ファイル エクスプローラーで、ラボ 6 (DPS のデバイスの自動登録) のスターター フォルダーに移動します。
+1. エクスプローラーで、ラボ 6 (DPS でのデバイスの自動登録) の Final フォルダーに移動します。
 
     "_ラボ 3:開発環境の設定_" では、ZIP ファイルをダウンロードしてコンテンツをローカルに抽出することで、ラボ リソースを含む GitHub リポジトリをクローンしました。 抽出されたフォルダー構造には、次のフォルダー パスが含まれます。
 
     * すべてのファイル
       * ラボ
           * 06 - DPS でのデバイスの自動登録
-            * スターター
+            * 最終工程
 
 1. **[ContainerDevice]** を右クリックし、 **[コピー]** をクリックします。
 
@@ -522,7 +522,7 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
 1. **[ファイル]** メニューで、 **[フォルダーを開く]** をクリックします。
 
-1. ラボ 6 のスターター フォルダーに移動します。
+1. ラボ 6 の Final フォルダーに移動します。
 
 1. **[ContainerDevice2001]** をクリックし、 **[フォルダーの選択]** をクリックします。
 
@@ -560,7 +560,7 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
 1. **[ファイル]** メニューで、 **[フォルダーを開く]** をクリックします。
 
-1. ラボ 6 のスターター フォルダーに移動します。
+1. ラボ 6 の Final フォルダーに移動します。
 
 1. **[ContainerDevice]** をクリックし、 **[フォルダーの選択]** をクリックします。
 
@@ -572,7 +572,7 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
     次のような内容が表示されます。
 
-    `Allfiles\Labs\06-Automatic Enrollment of Devices in DPS\Starter\ContainerDevice>`
+    `Allfiles\Labs\06-Automatic Enrollment of Devices in DPS\Final\ContainerDevice>`
 
 1. **ContainerDevice** プロジェクトをビルドして実行するには、次のコマンドを入力します。
 
@@ -647,7 +647,7 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
 1. Visual Studio Code ウィンドウの **[ファイル]** メニューで **[フォルダーを開く]** をクリックします。
 
-1. ラボ 6 のスターター フォルダーに移動します。
+1. ラボ 6 の Final フォルダーに移動します。
 
 1. **[ContainerDevice2001]** をクリックし、 **[フォルダーの選択]** をクリックします。
 
@@ -659,7 +659,7 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
     次のような内容が表示されます。
 
-    `Allfiles\Labs\06-Automatic Enrollment of Devices in DPS\Starter\ContainerDevice2001>`
+    `Allfiles\Labs\06-Automatic Enrollment of Devices in DPS\Final\ContainerDevice2001>`
 
 1. **ContainerDevice** プロジェクトをビルドして実行するには、次のコマンドを入力します。
 
@@ -864,8 +864,8 @@ Contoso の資産の監視および追跡ソリューションに対する現在
     ProvisioningClient AssignedHub: ; DeviceID:
     Unhandled exception. System.Exception: DeviceRegistrationResult.Status is NOT 'Assigned'
     at ContainerDevice.Program.ProvisionDevice(ProvisioningDeviceClient provisioningDeviceClient, SecurityProviderX509Certificate security) in C:\Users\howdc\Allfiles\Labs\06-Automatic Enrollment of Devices
-    in DPS\Starter\ContainerDevice2004\Program.cs:line 107
-    at ContainerDevice.Program.Main(String[] args) in C:\Users\howdc\Allfiles\Labs\06-Automatic Enrollment of Devices in DPS\Starter\ContainerDevice2004\Program.cs:line 49
+    in DPS\Final\ContainerDevice2004\Program.cs:line 107
+    at ContainerDevice.Program.Main(String[] args) in C:\Users\howdc\Allfiles\Labs\06-Automatic Enrollment of Devices in DPS\Final\ContainerDevice2004\Program.cs:line 49
     at ContainerDevice.Program.<Main>(String[] args)
     ```
 
@@ -934,7 +934,7 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
 1. ContainerDevice コードのプロジェクトがある Visual Studio Code 画面に切り替えます。
 
-    Visual Studio Code を前の演習の後に閉じていれば、Visual Studio Code を使用してラボ 6 スターター フォルダーを開きます。
+    Visual Studio Code を前の演習の後に閉じていれば、Visual Studio Code を使用してラボ 6 Final フォルダーを開きます。
 
 1. Visual Studio Code **[ビュー]** メニューで、 **[ターミナル]** をクリックします。
 

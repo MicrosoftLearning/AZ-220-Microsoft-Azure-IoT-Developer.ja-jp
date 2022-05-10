@@ -2,12 +2,12 @@
 lab:
   title: ラボ 18:Azure Defender for IoT で IoT デバイスが改ざんされているかどうかを検出する
   module: 'Module 10: Azure Defender and IoT Security'
-ms.openlocfilehash: a2259bf2d5db54f00022d54d2cd9cbf2dc5c3f6f
-ms.sourcegitcommit: 7874419a1f0f346f972914893b4b3644ba84a267
+ms.openlocfilehash: c1a1aa4fe7f487f4ab2c99ff62cd881b289ea80f
+ms.sourcegitcommit: b1a2557baf4854683036fde125ada75c6f3dbbfd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "139262458"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "141200498"
 ---
 # <a name="detect-device-tampering-with-azure-defender-for-iot"></a>Azure Defender for IoT でデバイス改ざんされているかどうかを検出する
 
@@ -159,6 +159,8 @@ Azure Defender for IoT を有効にすると、IoT デバイス、IoT Edge、IoT
 1. **[リソース グループ]** ドロップダウンで、 **[rg-az220]** をクリックします。
 
 1. **[場所]** ドロップダウンで、最寄りの Azure リージョン、つまり Azure IoT Hub がプロビジョニングされているリージョンを選択します。
+
+    使用可能なリージョンを表示するには、[https://azure.microsoft.com/global-infrastructure/services/?products=monitor&regions=all](https://azure.microsoft.com/global-infrastructure/services/?products=monitor&regions=all) を参照してください。
 
 1. **[価格レベル]** で、 **[従量課金制]** が選択されていることを確認します。
 
