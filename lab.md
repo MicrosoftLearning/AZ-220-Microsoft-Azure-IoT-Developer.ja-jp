@@ -16,7 +16,7 @@ ms.locfileid: "137892972"
 | Visual Studio Code Azure IoT ツール | https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools |
 | Azure Functions for Visual Studio Code | https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions |
 | Visual Studio Code Azure Resource Manager ツール拡張機能 | https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools |
-| Visual Studio Code Azure CLI ツール拡張機能 | https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli |
+| Visual Studio Code 用の Azure CLI ツール拡張機能 | https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli |
 | Visual Studio Code PowerShell 拡張機能 | https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell |
 | Visual Studio Code C# Extension | https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp |
 | Azure PowerShell | https://docs.microsoft.com/powershell/azure/install-az-ps |
