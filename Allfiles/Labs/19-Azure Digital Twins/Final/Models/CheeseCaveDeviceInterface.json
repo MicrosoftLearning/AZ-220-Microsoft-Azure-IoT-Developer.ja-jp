@@ -8,63 +8,57 @@
             "@type": "Property",
             "name": "sensorID",
             "schema": "string",
-            "description": "メーカー センサー ID",
+            "description": "Manufacturer Sensor ID",
             "writable": true
         },
         {
-            "@type": [
-                "Property",
-                "Temperature"
-            ],
+            "@type": ["Property", "Temperature"],
             "name": "desiredTemperature",
             "schema": "double",
             "unit": "degreeFahrenheit",
-            "description": "セラーの華氏での希望温度",
+            "description": "Cave desired temperature in Fahrenheit",
             "writable": true
         },
         {
             "@type": "Property",
             "name": "desiredHumidity",
             "schema": "double",
-            "description": "セラーのパーセント単位での希望湿度",
+            "description": "Cave desired humidity in percent",
             "writable": true
         },
         {
             "@type": "Property",
             "name": "fanAlert",
             "schema": "boolean",
-            "description": "ファン障害アラート",
+            "description": "Fan failure alert",
             "writable": true
         },
         {
             "@type": "Property",
             "name": "temperatureAlert",
             "schema": "boolean",
-            "description": "希望の温度を超える/下回るアラート",
+            "description": "Over/under desired temperature alert",
             "writable": true
         },
         {
             "@type": "Property",
             "name": "humidityAlert",
             "schema": "boolean",
-            "description": "希望の湿度を超える/下回るアラート",
+            "description": "Over/under desired humidity alert",
             "writable": true
         },
         {
-            "@type": [
-                "Telemetry",
-                "Temperature"
-            ],
+            "@type": ["Telemetry", "Temperature"],
             "name": "temperature",
             "schema": "double",
             "unit": "degreeFahrenheit",
-            "description": "現在測定されている温度"
+            "description": "Current measured temperature"
         },
         {
             "@type": "Telemetry",
             "name": "humidity",
             "schema": "double",
-            "description": "現在測定されている湿度"
+            "description": "Current measured humidity"
         }
     ]
 }
