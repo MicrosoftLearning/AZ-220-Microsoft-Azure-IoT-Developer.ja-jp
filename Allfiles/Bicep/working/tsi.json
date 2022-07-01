@@ -6,35 +6,35 @@
             "type": "string",
             "defaultValue": "new",
             "metadata": {
-                "description": "Determines whether or not a new Event Hub is provisioned."
+                "description": "新しいイベント ハブをプロビジョニングするかどうかを指定します。"
             }
         },
         "eventHubResourceGroup": {
             "type": "string",
             "defaultValue": "[resourceGroup().name]",
             "metadata": {
-                "description": "If you have an existing Event Hub provide the Resource Group name here."
+                "description": "既存のイベント ハブがある場合は、リソース グループ名をここで指定します。"
             }
         },
         "eventHubNamespaceName": {
             "type": "string",
             "defaultValue": "tsiquickstartns",
             "metadata": {
-                "description": "The namespace of the source event hub."
+                "description": "ソース イベント ハブの名前空間。"
             }
         },
         "eventHubName": {
             "type": "string",
             "defaultValue": "tsiquickstarteh",
             "metadata": {
-                "description": "The name of the source event hub."
+                "description": "ソース イベント ハブの名前。"
             }
         },
         "consumerGroupName": {
             "type": "string",
             "defaultValue": "tsiquickstart",
             "metadata": {
-                "description": "The name of the consumer group that the Time Series Insights service will use to read the data from the event hub. NOTE: To avoid resource contention, this consumer group must be dedicated to the Time Series Insights service and not shared with other readers."
+                "description": "Time Series Insights サービスがイベント ハブからデータを読み取るために使用するコンシューマー グループの名前。 注: リソースの競合を避けるために、このコンシューマー グループは Time Series Insights サービス専用とし、他のリーダーと共有しないようにしてください。"
             }
         },
         "environmentName": {
@@ -42,7 +42,7 @@
             "maxLength": 90,
             "defaultValue": "tsiquickstart",
             "metadata": {
-                "description": "Name of the environment. The name cannot include:   '<', '>', '%', '&', ':', '\\', '?', '/' and any control characters. All other characters are allowed."
+                "description": "環境の名前。 名前には、'<'、'>'、'%'、'&'、':'、'\\'、'?'、'/'、およびどの制御文字も含めることができません。 それ以外の文字は使用できます。"
             }
         },
         "environmentDisplayName": {
@@ -50,7 +50,7 @@
             "defaultValue": "tsiquickstart",
             "maxLength": 90,
             "metadata": {
-                "description": "An optional friendly name to show in tooling or user interfaces instead of the environment name."
+                "description": "ツールやユーザー インターフェイスで環境名の代わりに表示される省略可能なフレンドリ名。"
             }
         },
         "environmentSkuName": {
@@ -61,7 +61,7 @@
                 "S2"
             ],
             "metadata": {
-                "description": "The name of the sku. For more information, see https://azure.microsoft.com/pricing/details/time-series-insights/"
+                "description": "SKU の名前。 詳細については、https://azure.microsoft.com/pricing/details/time-series-insights/ を参照してください。"
             }
         },
         "environmentSkuCapacity": {
@@ -70,14 +70,14 @@
             "minValue": 1,
             "maxValue": 10,
             "metadata": {
-                "description": "The unit capacity of the Sku. For more information, see https://azure.microsoft.com/pricing/details/time-series-insights/"
+                "description": "SKU のユニット容量。 詳細については、https://azure.microsoft.com/pricing/details/time-series-insights/ を参照してください。"
             }
         },
         "environmentDataRetentionTime": {
             "type": "string",
             "defaultValue": "P30D",
             "metadata": {
-                "description": "The minimum timespan the environment’s events will be available for query. The value must be specified in the ISO 8601 format, e.g. \"P30D\" for a retention policy of 30 days."
+                "description": "環境のイベントにクエリを実行できる最小保持期間。 値は ISO 8601 形式で指定する必要があります (たとえば、保持ポリシーが 30 日間の場合は \"P30D\")。"
             }
         },
         "eventSourceName": {
@@ -85,7 +85,7 @@
             "defaultValue": "tsiquickstart",
             "maxLength": 90,
             "metadata": {
-                "description": "Name of the event source child resource. The name cannot include:   '<', '>', '%', '&', ':', '\\', '?', '/' and any control characters. All other characters are allowed."
+                "description": "イベント ソースの子リソースの名前。 名前には、'<'、'>'、'%'、'&'、':'、'\\'、'?'、'/'、およびどの制御文字も含めることができません。 それ以外の文字は使用できます。"
             }
         },
         "eventSourceDisplayName": {
@@ -93,7 +93,7 @@
             "defaultValue": "tsiquickstart",
             "maxLength": 90,
             "metadata": {
-                "description": "An optional friendly name to show in tooling or user interfaces instead of the event source name."
+                "description": "ツールやユーザー インターフェイスでイベント ソース名の代わりに表示される省略可能なフレンドリ名。"
             }
         },
         "eventSourceTimestampPropertyName": {
@@ -101,35 +101,35 @@
             "defaultValue": "",
             "maxLength": 90,
             "metadata": {
-                "description": "The event property that will be used as the event source's timestamp. If a value isn't specified for timestampPropertyName, or if null or empty-string is specified, the event creation time will be used."
+                "description": "イベント ソースのタイムスタンプとして使用されるイベント プロパティ。 TimestampPropertyName に値が指定されていない場合や、null または空の文字列が指定されている場合は、イベントの作成時刻が使用されます。"
             }
         },
         "eventSourceKeyName": {
             "type": "string",
             "defaultValue": "manage",
             "metadata": {
-                "description": "The name of the shared access key that the Time Series Insights service will use to connect to the event hub."
+                "description": "Time Series Insights サービスがイベント ハブに接続するために使用する共有アクセス キーの名前。"
             }
         },
         "accessPolicyReaderObjectIds": {
             "type": "array",
             "defaultValue": [],
             "metadata": {
-                "description": "A list of object ids of the users or applications in AAD that should have Reader access to the environment. The service principal objectId can be obtained by calling the Get-AzureRMADUser or the Get-AzureRMADServicePrincipal cmdlets. Creating an access policy for AAD groups is not yet supported."
+                "description": "環境への閲覧者アクセス権が必要な、AAD 内のユーザーまたはアプリケーションのオブジェクト ID の一覧。 サービス プリンシパルの objectId は、Get AzureRMADUser コマンドレットまたは Get AzureRMADServicePrincipal コマンドレット呼び出すことで取得できます。 AAD グループ用のアクセス ポリシーの作成は、まだサポートされていません。"
             }
         },
         "accessPolicyContributorObjectIds": {
             "type": "array",
             "defaultValue": [],
             "metadata": {
-                "description": "A list of object ids of the users or applications in AAD that should have Contributor access to the environment. The service principal objectId can be obtained by calling the Get-AzureRMADUser or the Get-AzureRMADServicePrincipal cmdlets. Creating an access policy for AAD groups is not yet supported."
+                "description": "環境への共同作成者のアクセス権が必要な、AAD 内のユーザーまたはアプリケーションのオブジェクト ID の一覧。 サービス プリンシパルの objectId は、Get AzureRMADUser コマンドレットまたは Get AzureRMADServicePrincipal コマンドレット呼び出すことで取得できます。 AAD グループ用のアクセス ポリシーの作成は、まだサポートされていません。"
             }
         },
         "location": {
             "type": "string",
             "defaultValue": "[resourceGroup().location]",
             "metadata": {
-                "description": "Location for all resources."
+                "description": "すべてのリソースの場所。"
             }
         }
     },
