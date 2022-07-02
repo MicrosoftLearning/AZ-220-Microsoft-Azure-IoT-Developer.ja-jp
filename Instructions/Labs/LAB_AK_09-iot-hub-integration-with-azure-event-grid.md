@@ -92,7 +92,7 @@ Contoso 社の経営陣は、Azure IoT サービスを使用して作成した�
 ```bash
 az provider show --namespace microsoft.eventgrid -o tsv
 ```
-> 結果に「**登録済み**」と表示された場合、これ以上何も必要ありません。 **NotRegistered** の場合は、次のコマンドを実行して **microsoft.eventgrid** プロバイダーを登録します。
+> 結果に **[登録済み]** と表示された場合、これ以上何も必要ありません。 **NotRegistered** の場合は、次のコマンドを実行して **microsoft.eventgrid** プロバイダーを登録します。
 
 ```bash
 az provider register --namespace microsoft.eventgrid
@@ -129,7 +129,7 @@ Azure Logic Apps は、企業全体または組織全体でアプリ、データ
 
 1. **[インスタンスの詳細]** の **[種類]** で **[消費]** を 選択します。
 
-1. **[名前]** フィールド に「**logic-az220-training-<自分の ID>** 」と入力します
+1. **[名前]** フィールド に「**logic-az220-training-{your-id}** 」と入力します
 
     例: **logic-az220-training-cp191218**
 
@@ -299,7 +299,7 @@ Azure Logic Apps は、企業全体または組織全体でアプリ、データ
 
 1. **EventSchema** フィールドが **Event Grid スキーマ** に設定されていることを確認します。
 
-1. **[トピックの詳細]** で、「**mydevicetopic-<自分の ID>** 」と入力します
+1. **[トピックの詳細]** で、「**mydevicetopic-{your-id}** 」と入力します
 
 1. **[イベントの種類]** で **[イベントの種類のフィルター]** ドロップダウンを開き、 **[作成されたデバイス]** 以外のすべての選択肢を選択解除します。
 

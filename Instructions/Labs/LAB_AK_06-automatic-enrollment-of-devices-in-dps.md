@@ -514,7 +514,7 @@ Contoso の資産の監視および追跡ソリューションに対する現在
 
     "ContainerDevice - Copy" という名前のフォルダーが作成されていることがわかります。
 
-1. **[ContainerDevice-Copy]** を右クリックし、 **[名前の変更]** をクリックして、「**ContainerDevice2001**」と入力します
+1. **[ContainerDevice-Copy]** を右クリックし、**[名前の変更]** をクリックして、「**ContainerDevice2001**」と入力します
 
 #### <a name="task-2-update-the-certificate-file-references-in-your-code-project"></a>タスク 2:コード プロジェクトの証明書ファイル参照を更新する
 
