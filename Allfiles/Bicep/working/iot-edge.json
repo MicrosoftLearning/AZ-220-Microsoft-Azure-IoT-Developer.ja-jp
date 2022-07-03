@@ -5,34 +5,34 @@
         "dnsLabelPrefix": {
             "type": "string",
             "metadata": {
-                "description": "仮想マシンのディスクが配置されるストレージ アカウントの一意の DNS 名"
+                "description": "Unique DNS Name for the Storage Account where the Virtual Machine's disks will be placed."
             }
         },
         "adminUsername": {
             "type": "string",
             "metadata": {
-                "description": "仮想マシンのユーザー名。"
+                "description": "User name for the Virtual Machine."
             }
         },
         "deviceConnectionString": {
             "type": "string",
             "defaultValue": "",
             "metadata": {
-                "description": "IoT Edge デバイスの接続文字列"
+                "description": "IoT Edge Device Connection String"
             }
         },
         "vmSize": {
             "type": "string",
             "defaultValue": "Standard_DS1_v2",
             "metadata": {
-                "description": "VM サイズ"
+                "description": "VM size"
             }
         },
         "ubuntuOSVersion": {
             "type": "string",
             "defaultValue": "18.04-LTS",
             "metadata": {
-                "description": "VM の Ubuntu バージョン。 これにより、この特定の Ubuntu バージョンの完全に修正されたイメージが選択されます。"
+                "description": "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."
             }
         },
         "authenticationType": {
@@ -43,20 +43,20 @@
                 "password"
             ],
             "metadata": {
-                "description": "仮想マシンで使用する認証の種類。 SSH キーをお勧めします。"
+                "description": "Type of authentication to use on the Virtual Machine. SSH key is recommended."
             }
         },
         "adminPasswordOrKey": {
             "type": "securestring",
             "metadata": {
-                "description": "仮想マシンの SSH キーまたはパスワード。 SSH キーをお勧めします。"
+                "description": "SSH Key or password for the Virtual Machine. SSH key is recommended."
             }
         },
         "allowSsh": {
             "type": "bool",
             "defaultValue": true,
             "metadata": {
-                "description": "SSH トラフィックがファイアウォールを通過できるようにする"
+                "description": "Allow SSH traffic through the firewall"
             }
         }
     },

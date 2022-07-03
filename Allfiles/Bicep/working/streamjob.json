@@ -6,7 +6,7 @@
             "type": "string",
             "defaultValue": "[resourceGroup().location]",
             "metadata": {
-                "description": "リソースの場所。"
+                "description": "Location for the resources."
             }
         },
         "streamAnalyticsJobName": {
@@ -14,7 +14,7 @@
             "minLength": 3,
             "maxLength": 63,
             "metadata": {
-                "description": "Stream Analytics ジョブ名。英数字とハイフンを含めることができます。長さは 3 文字から 63 文字までにする必要があります"
+                "description": "Stream Analytics Job Name, can contain alphanumeric characters and hypen and must be 3-63 characters long"
             }
         },
         "numberOfStreamingUnits": {
@@ -34,7 +34,7 @@
                 48
             ],
             "metadata": {
-                "description": "ストリーミング ユニット数"
+                "description": "Number of Streaming Units"
             }
         }
     },

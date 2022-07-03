@@ -8,64 +8,58 @@
             "@type": "Property",
             "name": "inUse",
             "schema": "boolean",
-            "description": "セラーが使用であるかどうかを示します",
+            "description": "Indicates whether the Cheese Cave is in use",
             "writable": true
         },
         {
             "@type": "Property",
             "name": "temperatureAlert",
             "schema": "boolean",
-            "description": "希望の温度を超える/下回るアラート",
+            "description": "Over/under desired temperature alert",
             "writable": true
         },
         {
             "@type": "Property",
             "name": "humidityAlert",
             "schema": "boolean",
-            "description": "希望の湿度を超える/下回るアラート",
+            "description": "Over/under desired humidity alert",
             "writable": true
         },
         {
             "@type": "Property",
             "name": "fanAlert",
             "schema": "boolean",
-            "description": "ファン障害アラート",
+            "description": "Fan failure alert",
             "writable": true
         },
         {
-            "@type": [
-                "Property",
-                "Temperature"
-            ],
+            "@type": ["Property", "Temperature"],
             "name": "temperature",
             "schema": "double",
             "unit": "degreeFahrenheit",
-            "description": "最後の測定温度",
+            "description": "Last measured temperature",
             "writable": true
         },
         {
             "@type": "Property",
             "name": "humidity",
             "schema": "double",
-            "description": "最後の測定湿度",
+            "description": "Last measured humidity",
             "writable": true
         },
         {
-            "@type": [
-                "Property",
-                "Temperature"
-            ],
+            "@type": ["Property", "Temperature"],
             "name": "desiredTemperature",
             "schema": "double",
             "unit": "degreeFahrenheit",
-            "description": "セラーの華氏での希望温度",
+            "description": "Cave desired temperature in Fahrenheit",
             "writable": true
         },
         {
             "@type": "Property",
             "name": "desiredHumidity",
             "schema": "double",
-            "description": "セラーのパーセント単位での希望湿度",
+            "description": "Cave desired humidity in percent",
             "writable": true
         },
         {
