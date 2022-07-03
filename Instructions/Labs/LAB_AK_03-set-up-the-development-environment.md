@@ -2,12 +2,12 @@
 lab:
   title: ラボ 03:開発環境の設定
   module: 'Module 2: Devices and Device Communication'
-ms.openlocfilehash: 4319c13ddf4eeea8487c677b5f05d88bc386d3d3
-ms.sourcegitcommit: 06dc1e6caa88a09b1246dd1161f15f619db9c6f8
+ms.openlocfilehash: ff8debfc695c847537f93449f9849775b2945b9c
+ms.sourcegitcommit: 7281efeb9cb5654361c2f1aa93aea724a3898966
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421556"
+ms.lasthandoff: 05/31/2022
+ms.locfileid: "145955880"
 ---
 # <a name="set-up-the-development-environment"></a>開発環境を設定する
 
@@ -244,7 +244,7 @@ Azure CLI は、Azure 関連のスクリプト作成タスクを簡単に実行�
 
 1. **[Azure CLI のインストール]** ページで、OS のインストール オプション ( **[Install on Windows]\(Windows にインストール\)** など) を選び、画面の指示に従って Azure CLI ツールをインストールします。
 
-    このコースのラボでは、Azure CLI ツールを使用するための詳細な手順が示されますが、詳細が必要な場合は、「[Azure CLI の使用を開始する](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)」を参照してください。
+    このコースのラボでは、Azure CLI ツールを使用するための詳細な手順が示されますが、詳細が必要な場合は、「[Azure CLI の概要](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)」を参照してください。
 
 #### <a name="task-4-install-python-39-on-your-local-pc"></a>タスク 4:ローカル PC に Python 3.9 をインストールする
 
@@ -284,11 +284,7 @@ IoT Edge と Docker をサポートするために Python 3.9 を使用します
 
     Windows の設定を使用して、[Windows の機能]ダイアログ ボックスを開き、それを使用して Hyper-V とコンテナが有効になっていることを確認できます。
 
-1. **[Docker ハブからダウンロード]** をクリックします
-
-1. [Windows 用の Docker Desktop] で、 **[Windows 用 Docker Desktop を取得する (安定版)]** をクリックします。
-
-1. インストールを開始するには、 **[実行]** をクリックします。
+1. **[Docker Desktop for Windows]** をクリックし、画面の指示に従って、ダウンロードしたインストール ファイルを開いて実行します。
 
     Docker Desktop のインストール ダイアログを表示するには、少し時間がかかることがあります。
 
@@ -467,7 +463,7 @@ Microsoft は、ラボ リソース ファイルへのアクセスを提供す�
 
 1. **[参照]** をクリックし、アクセスに便利なフォルダーの場所に移動します。
 
-    > **重要**: 既定では、Windows の[最大ファイル パス長は 260](https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file#maximum-path-length-limitation) です。 ZIP 内のファイル パスはすでに長いため、大きなファイル パスを使用してネストされたフォルダー内のアーカイブを抽出することは避けてください。 たとえば、zip を抽出するように求められるデフォルトのパスは、**c:\users\\[username]\downloads\AZ-220-Microsoft-Azure-IoT-Developer-master** のようになります。これは、できるだけ短くすることお勧めします (**c:\az220** など)
+    > **重要**: 既定では、Windows の [最大ファイル パス長は 260](https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file#maximum-path-length-limitation) です。 ZIP 内のファイル パスはすでに長いため、大きなファイル パスを使用してネストされたフォルダー内のアーカイブを抽出することは避けてください。 たとえば、zip を抽出するように求められるデフォルトのパスは、**c:\users\\[username]\downloads\AZ-220-Microsoft-Azure-IoT-Developer-master** のようになります。これは、できるだけ短くすることお勧めします (**c:\az220** など)
 
 1. ファイルを抽出するには、 **[抽出]** をクリックします。
 
@@ -622,6 +618,6 @@ Azure CLI には、リソース プロバイダーの管理に役立ついくつ
 
     ![List resource providers](media/LAB_AK_03-list-resource-providers.png)
 
-1. リストされたリソースをフィルター処理するには、検索テキスト ボックスに **「インサイト」** を入力します。
+1. リストされたリソースをフィルター処理するには、検索テキスト ボックスに「**insights**」と入力します。
 
     検索条件が入力されると、リストがフィルター処理されることに注意してください。 検索でも大文字と小文字は区別されません。

@@ -2,12 +2,12 @@
 lab:
   title: ラボ 13:VS コードを使用して Azure IoT Edge でカスタム モジュールを開発、デプロイ、デバッグする
   module: 'Module 7: Azure IoT Edge Modules'
-ms.openlocfilehash: 4908d19567e43a164d559638467ea4d3373c6902
-ms.sourcegitcommit: eec2943250f1cd1ad2c5202ecbb9c37af71e8961
+ms.openlocfilehash: 9586c15c0e16a0bdbe7850a0c28af480dcf34086
+ms.sourcegitcommit: 7281efeb9cb5654361c2f1aa93aea724a3898966
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "140872794"
+ms.lasthandoff: 05/31/2022
+ms.locfileid: "145955883"
 ---
 # <a name="develop-deploy-and-debug-a-custom-module-on-azure-iot-edge-with-vs-code"></a>VS コードを使用して Azure IoT Edge でカスタム モジュールを開発、デプロイ、デバッグする
 
@@ -162,7 +162,7 @@ Azure Container Registry は、コンテナーをデプロイするためのプ�
 
 1. Azure portal で、 **[+ リソースの作成]** をクリックします。
 
-1. **[新規]** ブレードの **[Marketplace の検索]** テキストボックスに「**コンテナー レジストリ**」と入力し、 **[Enter]** を押します。
+1. **[新規]** ブレードの **[Marketplace の検索]** テキストボックスに「**コンテナー レジストリ**」と入力し、**Enter** キーを押します。
 
 1. **[Marketplace]** ブレードで、 **[コンテナー レジストリ]** をクリックします。
 
@@ -176,7 +176,7 @@ Azure Container Registry は、コンテナーをデプロイするためのプ�
 
     グローバルに一意な名前を付けるには、「+++acraz220training{your-id}+++」と入力します。
 
-    例: **acraz220trainingcah191204**
+    例: **acraz220trainingcah220531**
 
     Azure Container Registry の名前は、IP 接続デバイスからアクセスでき、パブリックにアクセス可能なリソースであるため、グローバルに一意である必要があります。
 
@@ -212,7 +212,7 @@ Azure Container Registry は、コンテナーをデプロイするためのプ�
 
 1. **[管理者ユーザー]** で **[有効にする]** をクリックします。
 
-    このオプションを使用すると、パスワードとしてユーザー名と管理者ユーザー アクセス キーとしてレジストリ名を使用して、Azure Container Registry サービスに Docker ログインできます。
+    このオプションを使用すると、ユーザー名としてレジストリ名と、パスワードとして管理者ユーザー アクセス キーを使用して、Azure Container Registry サービスにログインできます。
 
 1. 次の値をメモします。
 
@@ -256,11 +256,11 @@ Azure Container Registry を作成し、これに対してローカル マシン
 
 1. **[表示]** メニューの Visual Studio コマンド パレット を開き、 **[コマンド パレット]** をクリックします。
 
-1. コマンド プロンプトに「**Azure IoT Edge:New**」と入力し、**Azure IoT Edge:New IoT Edge solution** コマンドを入力して実行します。
+1. コマンド プロンプトに「**Azure IoT Edge: New**」と入力し、**[Azure IoT Edge: 新しい IoT Edge ソリューション]** をクリックします。
 
 1. 新しいソリューションを作成するフォルダーを参照し、 **[フォルダーの選択]** をクリックします。
 
-1. ソリューション名の入力を求められたら、「**EdgeSolution**」と入力します。
+1. ソリューション名の入力を求められたら、「**EdgeSolution**」と入力します
 
     この名前は、作成される新しい **IoT Edge ソリューション** のディレクトリ名として使用 されます。
 
@@ -268,7 +268,7 @@ Azure Container Registry を作成し、これに対してローカル マシン
 
     これにより、ソリューションに追加されたカスタム IoT Edge モジュールの開発言語として `C#` が定義されます。
 
-1. カスタム IoT Edge モジュールの名前を入力するように求められたら、 「**ObjectCountingModule**」と入力します。
+1. カスタム IoT Edge モジュールの名前を入力するように求められたら、「**ObjectCountingModule**」と入力します
 
     これは、作成される新しい IoT Edge モジュールの名前になります。
 
@@ -380,7 +380,7 @@ Azure Container Registry を作成し、これに対してローカル マシン
 
 1. Visual Studio Code の **[表示]** メニューで、 **[コマンド パレット]** をクリックします。
 
-1. コマンド プロンプトに「**Azure IoT Edge:Set Default**」と入力し、 **[Azure IoT Edge:Edge ソリューションの既定のターゲット プラットフォームの設定]** をクリックします。
+1. コマンド プロンプトに「**Azure IoT Edge: Set Default**」と入力し、**[Azure IoT Edge: Edge ソリューションの既定のターゲット プラットフォームを設定]** をクリックします。
 
 1. ターゲット プラットフォームを選択するには、 **amd64** をクリックします。
 
@@ -675,7 +675,7 @@ Azure Container Registry を作成し、これに対してローカル マシン
 
 1. **[IoT Edge]** ペインの上部にある **[IoT Edge デバイスの追加]** をクリックします。
 
-1. **[デバイスの作成]** ブレードの **[デバイス ID]** で、「**objectcountingdevice**」と入力します。
+1. **[デバイスの作成]** ブレードの **[デバイス ID]** で、「**objectcountingdevice**」と入力します
 
 1. **[認証の種類]** で **[対称キー]** が選択されていることを確認し、 **[キーの自動生成]** チェックボックスがオンになっていることを確認します。
 
